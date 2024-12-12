@@ -43,6 +43,17 @@
             color: #28a745;
             font-size: 0.9em;
         }
+        .car-description {
+            font-size: 0.9em;
+            color: #555;
+            margin-top: 10ox;
+            height: 40px;
+            overflow: hidden;
+        }
+        .car-year {
+            color: #777;
+            font-size: 0.9em;
+        }
         @media (max-width: 600px) {
             .car-item {
                 width: 90%;
@@ -58,6 +69,7 @@
                 <div class="car-title">{{ car.make }} {{ car.model }}</div>
                 <div class="car-price">{{ car.price }}</div>
                 <div class="car-year">Year: {{ car.year }}</div>
+                <div class="car-description">{{ car.description }}</div>
             </div>
         {% endfor %}
     </div>
